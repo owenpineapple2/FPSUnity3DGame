@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Projectile : MonoBehaviour
 {
     [SerializeField] float lifetimeDuration;
     float timer;
+    [SerializeField] int damage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +27,12 @@ public class Projectile : MonoBehaviour
     {
         if (!collision.transform.CompareTag("Player"))
         {
+            if (collision.transform.TryGetComponent<Health>(out Health health))
+            {
+                health.TakeDamage(damage);
+            }
+
+
             Destroy(gameObject);
         }
     }
