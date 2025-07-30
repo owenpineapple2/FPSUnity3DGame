@@ -9,3 +9,4 @@ Crosshair
 
 
 QUESTIONS:
+Longer cooldown on ability?

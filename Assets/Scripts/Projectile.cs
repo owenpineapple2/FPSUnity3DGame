@@ -3,9 +3,11 @@ using UnityEngine.UI;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] float lifetimeDuration;
+    [SerializeReference] protected float lifetimeDuration;
     float timer;
     [SerializeField] int damage;
+    public string abilityName;
+    public float force;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +25,7 @@ public class Projectile : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter(Collision collision)
+    protected void OnCollisionEnter(Collision collision)
     {
         if (!collision.transform.CompareTag("Player"))
         {
