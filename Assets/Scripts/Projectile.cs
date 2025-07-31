@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     [SerializeField] int damage;
     public string abilityName;
     public float force;
+    public float cooldown;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

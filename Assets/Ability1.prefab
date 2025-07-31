@@ -155,7 +155,8 @@ MonoBehaviour:
   lifetimeDuration: 10
   damage: 50
   abilityName: 
-  force: 0
+  force: 2500
+  cooldown: 10
 --- !u!1001 &1411712034974477695
 PrefabInstance:
   m_ObjectHideFlags: 0

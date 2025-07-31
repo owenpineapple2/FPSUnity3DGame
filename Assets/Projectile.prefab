@@ -151,3 +151,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetimeDuration: 10
   damage: 10
+  abilityName: 
+  force: 2500
+  cooldown: 0.75
