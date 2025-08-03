@@ -1,9 +1,11 @@
+using Unity.VisualScripting;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerCode : MonoBehaviour
 {
-    public GameObject projectile1, projectile2; 
+    public GameObject projectile1, projectile2, projectile3; 
     public GameObject output;
     float force;
 
@@ -58,6 +60,12 @@ public class PlayerCode : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.E))
             {
                 SpawnProjectile(Instantiate(projectile2));
+            }
+            else if (Input.GetKeyDown(KeyCode.F))
+            {
+                SpawnProjectile(Instantiate(projectile3));
+            }
+            {
             }
            
         }
